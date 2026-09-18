@@ -1,0 +1,10 @@
+if int(input("你的身高是多少：")) >120:
+    print("身高超出限制，不可以免费")
+    print("但是可以评3级以上vip特权进入")
+
+    if int(input("你的vip级别是多少:")) >3:
+        print("你可以直接进去游玩")
+    else:
+        print("你需要买票")
+else:
+    print("欢迎你的到来哦")

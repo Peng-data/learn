@@ -1,0 +1,16 @@
+if int(input("你的年龄是多少:")) >=18:
+    print("您已成年")
+    if int(input("你的年龄是多少:")) <30:
+        print("你的年龄符合要求")
+        if int(input("你的入职时间是多少:")) >2:
+            print("你的工龄达标了")
+            if int(input("你的级别是多少")) >3:
+                print("你可以领取礼品")
+            else:
+                print("你的级别不够")
+        else:
+            print("你的入职时间不够")
+    else:
+        print("你的年龄不够")
+else:
+    print("你尚未成年")                

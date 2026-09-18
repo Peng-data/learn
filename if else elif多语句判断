@@ -1,0 +1,19 @@
+if int(input("请输入你的身高(cm):")) <=120:
+    print("身高小于120cm可以直接进园游玩")
+elif int(input("请输入你的VIP等级(1-5):")) >3:
+    print("vip高于3级可以直接进院游玩")
+elif int(input("今天星期几:")) == 1:
+    print("可以免费进去游玩")
+else:
+    print("请补票20元")
+
+
+
+if int(input("猜猜这个数字是多少")) ==10:
+    print("恭喜你猜对了")
+elif int(input("不对再猜一次")) ==10:
+    print("恭喜你猜对了")
+elif int(input("不对再猜最后一次")) ==10:
+    print("恭喜你猜对了")
+else :
+    print("hh垃圾三次都猜错了")
