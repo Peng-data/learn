@@ -1,0 +1,6 @@
+name = "gsdfgfdnjkldvjsjhsjifhidslsdgjdfhdssiajasddjjaa"
+count = 0
+for x in name:
+    if x=="a":
+        count+=1
+print(f"被统计的字符串有{count}个a")
