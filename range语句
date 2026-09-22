@@ -1,0 +1,10 @@
+#range语法1
+#for x in range(1,10):
+  #  print(x)
+
+#range语法2
+#for x in range(1,10,2):
+ #   print(x)
+
+for x in range(10):
+    print("送郁金香")

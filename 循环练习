@@ -1,0 +1,15 @@
+money = 10000
+#for循环对员工发工资
+for i in range(1,21):
+    import random
+    score = random.randint(1,10)
+
+    if score<=5:
+        print(f"员工{i}绩效为{score},不满足要求,不发工资")
+        continue
+    if money >= 1000:
+        money -=1000
+        print(f"员工{i}可领1000元工资,公司账户余额{money}。")
+    else:
+        print(f"本月工资不发了，余额不足")
+        break

@@ -1,0 +1,13 @@
+def add (x,y,z):
+    reseult = x+y+z
+    print(f"{x}+{y}+{z}={reseult}")
+
+add(3,5,8)
+
+
+def tem(x):
+    if x <=37.5:
+        print(f"欢迎来到wyu,您的体温正常为{x}，请进。")
+    else:
+        print(f"欢迎来的wyu,您的体温为{x}，请隔离。")
+tem(38.6)

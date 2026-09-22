@@ -1,0 +1,10 @@
+def say_hi():
+    print("hello world")
+
+#调用函数
+say_hi()
+
+
+def voice_say():
+    print("welcome to wyu,\nshow your health id")
+voice_say()
