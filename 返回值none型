@@ -1,0 +1,19 @@
+def say():
+    print("hello")
+
+result = say()
+print(f"{result}")
+print(f"{type(result)}")
+
+
+def check(age):
+    if age>=18:
+        return"success"
+    else:
+        return None
+
+result = check(15)
+if not result:
+    print("未成年请离开")
+
+    

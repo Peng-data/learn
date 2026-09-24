@@ -1,0 +1,48 @@
+money = 5000000
+name = input("请输入你的名字:")
+
+def seek(abc):
+    if abc:
+        print("----------查询余额----------")
+    print(f"你的余额剩余{money}元")
+
+def saving(num):
+    global money 
+    money += num
+    print("----------存款----------")
+    print(f"你存入了{num}元。")
+    seek(False)
+
+def out(num):
+    global money
+    money -= num
+    print("----------取款----------")
+    print(f"你取走了{num}元。")
+    seek(False)
+
+def home():
+    print("----------主菜单----------")
+    print(f"请输入{name},你好,欢迎来到xx银行ATM,请选择操作:")
+    print("查询余额输入\t[输入1]")
+    print("存款\t\t[输入2]")
+    print("取款\t\t[输入3]")
+    print("退出\t\t[输入4]")
+    return input("请输入你的选择:")
+
+while True:
+      key_input = home()
+      if key_input == "1":
+          seek(True)
+          continue
+      elif key_input == "2":
+          num = int(input("你想要存入多少钱"))
+          saving(num)
+          continue
+      elif key_input == "3":
+          num =int(input("你想要取出多少钱"))
+          out(num)
+          continue
+      else:
+          print("程序退出了")
+          break
+              

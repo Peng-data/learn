@@ -1,0 +1,44 @@
+money = 50000
+name = input("请输入你的名字：")
+
+def seek():
+    print("----------查询余额-----------")
+    print(f"尊敬的{name}先生您好,你账号上的余额为:{money}元")
+
+def saving(num):
+    global money
+    money += num
+    print("----------存款----------")
+    print(f"你存入{num}元,您的账户余额为{money}元。")
+
+def get(num):
+    global money 
+    money -= num
+    print("----------取款----------")
+    print(f"您取走{num}元,您的账户余额为{money}元。")
+
+def main():
+    print("----------主菜单----------")
+    print("请选择您要进行的操作")
+    print("查询余额\t[输入1]")
+    print("存款\t\t[输入2]")
+    print("取款\t\t[输入3]")
+    print("退出\t\t[输入4]")
+    return input("请输入你的选择:")
+
+while True:
+    keyboard = main()
+    if keyboard == "1":
+        seek()
+        continue
+    elif keyboard =="2":
+        num = int(input("你想要存入多少钱"))
+        saving(num)
+        continue
+    elif keyboard == "3":
+        num = int(input("你想要取出多少钱"))
+        get(num)
+        continue
+    else:
+        print("退出程序")
+        break 

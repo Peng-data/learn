@@ -1,0 +1,7 @@
+def num1():
+    print("2")
+def num2():
+    print("1")
+    num1()
+    print("3")
+num2()
