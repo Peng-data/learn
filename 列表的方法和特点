@@ -1,0 +1,11 @@
+my_list = ["asdf","zxcv","qwer"]
+index = my_list.index("zxcv")
+print(f"zxcv在列表中的索引值为:{index}")
+
+my_list[0] = "ghjk"
+print(f"列表修改后，结果是:{my_list}")
+
+my_list.insert(1,"bnm,")
+print(f"列表插入元素后，结果是：{my_list}")
+
+my_list  

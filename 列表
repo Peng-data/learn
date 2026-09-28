@@ -1,0 +1,8 @@
+name_list = ['asdf','zxcv']
+print(name_list)
+print(type(name_list))
+
+
+
+my_list = [["pxx","xl","yll"],[["love","like"],666]]
+print(my_list[0][1])
