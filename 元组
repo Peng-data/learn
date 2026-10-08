@@ -1,0 +1,5 @@
+t1 = ("asdf","qwer","zxcv")
+index = t1.index("qwer")
+print(f"qwer在元组中的索引为:{index}")
+num = t1.count("asdf")
+print(f"asdf在元组中的个数为:{num}")

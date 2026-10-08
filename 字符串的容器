@@ -1,0 +1,13 @@
+my_str = "asdf and qwer"
+value = my_str[1]
+value2 = my_str[-11]
+print(f"字符串的第2个元素是:{value}")
+print(f"字符串的倒数第11个元素是:{value2}")  
+
+str1="itheima itcast boxunegu"
+num = str1.count("it")
+print(f"it在字符串中出现的次数为:{num}")
+new_str = str1.replace(" ","|")
+print(f"替换后的字符串为:{new_str}")
+new_str2_list= new_str.split("|")
+print(f"分割后的列表为:{new_str2_list}")

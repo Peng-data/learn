@@ -1,0 +1,3 @@
+set = {"asdf","qwer","zxcv"}
+set.add("...")
+print(f"集合的元素为:{set}")

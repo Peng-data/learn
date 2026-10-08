@@ -1,0 +1,15 @@
+my_str = "01234567"
+num = my_str[::-1]
+print(f"结果4:{num}")
+
+
+
+str1 = "万过薪月,员马程序黑来,nohtyp学"
+result1 = str1[::-1][9:14]
+print(f"结果1:{result1}")
+
+result2 = str1[5:10][::-1]
+print(f"结果2:{result2}")
+
+result3 = str1.split(",")[1].replace("来","")[::-1]
+print(f"结果3:{result3}")
