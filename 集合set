@@ -1,3 +1,7 @@
-set = {"asdf","qwer","zxcv"}
-set.add("...")
-print(f"集合的元素为:{set}")
+
+
+my_list = ['黑马','白马','灰马','黑马','白马','灰马','黑马','白马','灰马']
+my_set = set()
+for element in my_list:
+    my_set.add(element)
+print(f"去重后的元素为:{my_set}")

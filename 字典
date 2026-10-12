@@ -1,0 +1,20 @@
+my_dict = {"彭绪鑫":100,"李明":95,"王芳":88}
+print(f"字典的元素为:{my_dict}")
+
+my_dict2 = {}
+my_dict3 = dict()
+print(f"空字典2为:{my_dict2}")
+print(f"空字典3为:{my_dict3}")
+
+my_dict = {"彭绪鑫":100,"李明":95,"王芳":88}
+score = my_dict["彭绪鑫"]
+print(f"彭绪鑫的成绩为:{score}")
+
+
+score_dict = {"彭":{"quote":100,
+                   "math":90,
+                   "english":95},
+              "李":{"quote":88,
+                   "math":85,
+                   "english":90}}
+print(f"彭的数学成绩为:{score_dict['彭']['math']}")

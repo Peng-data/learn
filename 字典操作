@@ -1,0 +1,47 @@
+my_dict = {"周杰伦":"暗号","卢广仲":"鱼仔"}
+my_dict["陈绮贞"] = "太聪明"
+print(f"字典的新增元素为:{my_dict}")
+
+song = my_dict.pop("周杰伦")
+print(f"字典的删除元素后为:{my_dict}")
+
+my_dict.clear()
+print(f"字典清空后为:{my_dict}")
+
+my_dict = {"周杰伦":"暗号","卢广仲":"鱼仔"}
+keys = my_dict.keys()
+print(f"字典的所有键为:{keys}")
+
+for key in keys:
+    print(f"字典的键为:{key}")
+    print(f"字典的值为:{my_dict[key]}")
+
+num = len(my_dict)
+print(f"字典的元素数量为:{num}")
+
+
+
+message = {
+           "王小明":{"部门":"销售部",
+                     "工资":8000,
+                     "级别":1},
+           "周杰伦":{"部门":"市场部",
+                     "工资":9000,
+                     "级别":2},
+           "林俊杰":{"部门":"技术部",
+                     "工资":10000,
+                     "级别":3},
+           "卢广仲":{"部门":"人事部",
+                     "工资":7000,
+                     "级别":1}
+           }
+
+print(f"升职加薪之前的薪资情况:{message}")
+for name in message:
+    if message[name]["级别"] == 1:
+        employee = message[name]
+        employee["工资"] += 1000
+        employee["级别"] = 2
+        message[name] = employee
+
+print(f"升职加薪之后的薪资情况:{message}")
