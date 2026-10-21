@@ -1,0 +1,25 @@
+def user_info(name, age, gender):
+    print(f"姓名:{name}, 年龄:{age}, 性别:{gender}")
+
+user_info("张三", 20, "男")
+
+
+user_info(age=30, name="李四", gender="女")
+
+def user_info(name, age, gender="男"):
+    print(f"姓名:{name}, 年龄:{age}, 性别:{gender}")
+
+user_info("王五", 25)
+
+
+#不定长的形式参数会作为元组存在，接受不定长数量的参数传入
+def user_info(*args):
+    print(f"args的类型为:{type(args)},内容是:{args}")
+
+user_info("james",42,"goat")  
+
+#关键字不定长 **号
+def user_info(**kwargs):
+    print(f"kwargs的类型为:{type(kwargs)},内容是:{kwargs}")
+
+user_info(name="james",age=42,job="goat")

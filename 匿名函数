@@ -1,0 +1,8 @@
+def test_func(computer):
+    result = computer(1, 2)
+    print(f"computer{type(computer)}")
+    print(f"result={result}")
+
+def computer(x,y):
+    return x+y
+test_func(computer)

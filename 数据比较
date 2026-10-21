@@ -1,0 +1,3 @@
+print(f"abd与abc的比较结果为:{'abd' > 'abc'}")
+
+print(f"ab与a比较的结果为:{'ab' > 'a'}")

@@ -1,0 +1,1 @@
+print(f"abd>abc,{'abd' > 'abc' }")
