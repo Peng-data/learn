@@ -1,0 +1,8 @@
+
+
+f = open("D:/test.txt","w",encoding="UTF-8")
+f.write("Hello")
+
+
+f.close()
+

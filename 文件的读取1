@@ -1,0 +1,25 @@
+f = open("D:\测试open.txt","r",encoding="UTF-8")
+print(type(f))
+
+#print(f.read(10))
+
+#print(f.read())
+print("------------------------------")
+
+#lines = f.readlines()
+#print(f"lines的类型为:{type(lines)}")
+#print(lines)
+
+line1 = f.readline()
+line2 = f.readline()
+line3 = f.readline()
+print(f"第一行的数据是:{line1}")
+print(f"第二行的数据是:{line2}")
+print(f"第三行的数据是:{line3}")   
+
+
+for line in f:
+    print(f"for循环读取的数据是:{line}")
+
+f.close()
+ 

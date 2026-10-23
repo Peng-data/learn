@@ -1,0 +1,11 @@
+fr = open("D:\bill.txt","r",encoding="UTF-8")
+
+fw = open("D:\bill.txt.bak","w",encoding="UTF-8")
+
+for line in fr:
+    line = line.strip()
+    if line.split(",")[0] == "测试":
+        fw.write(line + "\n")
+
+fr.close()
+fw.close()
