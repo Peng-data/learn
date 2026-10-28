@@ -1,0 +1,9 @@
+try:
+    f = open("D:/abc.txt","r",encoding="UTF-8")
+except:
+    print("文件不存在")
+    f = open("D:/abc.txt","w",encoding="UTF-8")
+
+
+finally:
+    f.close()

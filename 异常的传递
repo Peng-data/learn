@@ -1,0 +1,18 @@
+def func1():
+    print("func1 开始执行")
+    num = 10 / 0
+    print("func1 执行结束")
+
+def func2():
+    print("func2 开始执行")
+    func1()
+    print("func2 执行结束")
+
+def main():
+    try:
+        func2()
+    except Exception as e:
+        print(f"捕获到异常: {e}")
+main()
+
+    

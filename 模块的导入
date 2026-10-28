@@ -1,0 +1,16 @@
+#import time
+#print("你好")
+#time.sleep(5)
+#print("我好")
+
+
+#from time import sleep
+#$print("你好")
+#
+
+#
+
+import time as t
+print("你好")
+t.sleep(5)
+print("我好")
