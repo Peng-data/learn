@@ -1,0 +1,38 @@
+#文件处理的相关工具
+
+
+def print_file_info(file_name):
+    """
+    功能是：将给定路径的文件内容输出到控制台
+    :param file_name: 文件路径
+    :return:None
+    """
+    f = None
+    try:
+        f = open(file_name, "r", encoding="UTF-8")
+        cotent = f.read()
+        print("文件的全部内容如下：")
+        print(cotent)
+    except Exception as e:
+        print(f"读取文件失败，失败原因是：{e}")
+    finally:
+        if f:
+            f.close()
+
+def appenf_to_file(file_name,data):
+    """
+    功能是：将给定内容追加到指定文件中
+    :param file_name: 文件路径
+    :param data: 需要追加的内容
+    :return: None
+    """
+    f = open(file_name,"a",encoding="UTF-8")
+    f.write(data)
+    f.write("\n")
+    f.close
+    
+
+if __name__ == "__main__":
+    #print_file_info("D:/test.txt")
+    append_to_file("D:/test.txt","Hello World") 
+

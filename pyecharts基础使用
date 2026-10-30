@@ -1,0 +1,14 @@
+from pyecharts.charts import Line
+from pyecharts.options import TitleOpts 
+line = Line()
+
+line.add_xaxis(["商家A", "商家B", "商家C", "商家D", "商家E"])
+line.add_yaxis("销量", [5, 20, 36, 10, 75])
+
+line.set_global_opts(
+    title_opts={"text": "折线图示例",pos_left="center",pos_top="top"})
+
+
+
+
+line.render()
